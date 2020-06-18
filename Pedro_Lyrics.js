@@ -1,6 +1,4 @@
-
-
-var musica = message.substring(6);
+var musica = //entrada
 var n_musica = ""; //musica processada
 var array_linhas = musica.split(/\r?\n/); // separa musica em linhas (versos)
 var linhas = array_linhas.length;
@@ -24,7 +22,4 @@ for (var i = 0; i < linhas; i++) {
     }
     n_musica = n_musica.concat(n_linha, "\n");
 }
-bot.sendMessage({
-    to: channelID,
-    message: String(n_musica)
-});
+console.log(n_musica)
