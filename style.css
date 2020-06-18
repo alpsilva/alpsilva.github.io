@@ -1,72 +1,42 @@
 /* comentario */
-p{
-	color: white;
-	text-shadow: 2px 2px 1px #111111;
-	font-size: 20px;
-	font-family: "Comic Sans MS", arial;
-}
 
 body{
-
+	padding-top: 100px;
 }
 
-*{
-	margin: 0;
-	padding: 0;
+h1{
+	color: white;
 }
 
-header{
-	background-color: rgba(36, 82, 122, 0.6);
-	min-height: 70px;
-	top: 0px;
-	padding: 10px;
-	position: fixed;
+p{
+	color: white;
+}
+
+#secao1{
+	background-image: url("imagens/bg5.jpg");
+	height: 40vh;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#secao2{
+	background-image: url("imagens/bg3.jpg");
+	height: 40vh;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#secao3{
+	background-color: white;
+	height: 20vh;
 	width: 100%;
 }
 
-#logo{
-	float: left;
-	font-family: "Comic Sans MS";
-	font-size: 40px;
-	color: #FFFFFF;
-	text-shadow: 2px 2px 1px #111111;
-
-}
-
-#menu{
-	margin-top: 15px;
-	float: right;
-
-}
-
-#menu a{
-	margin: 20px;
-	padding: 15px;
-	text-decoration: none;
-	font-family: "Comic Sans MS";
-	font-size: 20px;
-	text-shadow: 2px 2px 1px #111111;
-	color: #FFFFFF;	
-}
-
-#menu a:hover{
-	margin: 10px;
-	padding: 15px;
-	background-color: rgba(0, 0, 0, 0.80);
-	color: #4682B4;
-	-webkit-transition: 0.5s;
-}
-
-
-
-#menuPrincipal{
-	clear: both;
-	background-image: url("imagens/bg5.jpg");
-	background-size: 100%;
-	min-height: 1000px;
-}
-
-.containerPrincipal{
+#containerPrincipal{
 	margin: auto;
 	width: 50%;
 	border: 3px, solid, rgb(36, 82, 122);
@@ -92,28 +62,8 @@ header{
 	-webkit-transition: 0.3s;
 }
 
-h1{
-	color: #FFFFFF;
-	text-align: center;
-	text-shadow: 2px 2px 1px #111111;
-	margin: 0 0 50px 0;
-	padding: 40px;
-}
 
-#quemSou{
-	background-image: url("imagens/bg3.jpg");
-	background-size: 100%;
-	min-height: 500px;
-	padding: 100px;
-}
 
-#formação{
-	background-color: white;
-	min-height: 200px;
-	width: 50%;
-	margin: auto;
-	padding: 50px;
-}
 
 #ufpelogo{
 	float: left;
