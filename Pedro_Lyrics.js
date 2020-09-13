@@ -17,11 +17,11 @@ $(document).ready(function () {
                 aux++ //Para garantir que a primeira posição do array (vazia) nunca seja escolhida
             }
             var n_linha = ""; //nova linha
-            if ( array_palavras[j].length < 4){
-                if(j == palavras-1){
-                    j--;
+            if ( array_palavras[aux].length < 4){
+                if(aux == palavras-1){
+                    aux--;
                 } else{
-                    j++;
+                    aux++;
                 }
             }
             array_palavras[aux] = "PEDRO" //substitui a palavra por PEDRO

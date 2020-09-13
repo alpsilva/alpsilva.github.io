@@ -3,7 +3,7 @@ p{
 	color: white;
 	text-shadow: 2px 2px 1px #111111;
 	font-size: 20px;
-	font-family: "Comic Sans MS", arial;
+	font-family: "Times New Roman";
 }
 
 *{
@@ -15,7 +15,7 @@ p{
 
 #logo{
 	float: left;
-	font-family: "Comic Sans MS";
+	font-family: "Times New Roman";
 	font-size: 40px;
 	color: #FFFFFF;
 	text-shadow: 2px 2px 1px #111111;
@@ -32,7 +32,7 @@ p{
 	margin: 20px;
 	padding: 15px;
 	text-decoration: none;
-	font-family: "Comic Sans MS";
+	font-family: "Times New Roman";
 	font-size: 20px;
 	text-shadow: 2px 2px 1px #111111;
 	color: #FFFFFF;	
@@ -50,6 +50,7 @@ p{
 
 #menuPrincipal{
 	clear: both;
+	color: #FFFFFF;
 	background-image: url("imagens/bg5.jpg");
 	background-size: 100%;
 	min-height: 1000px;
@@ -57,7 +58,7 @@ p{
 
 .containerPrincipal{
 	margin: auto;
-	width: 50%;
+	width: 75%;
 	border: 3px, solid, rgb(36, 82, 122);
 	align-self: center;
 	padding: 300px;
@@ -90,6 +91,7 @@ h1{
 }
 
 #quemSou{
+	color: #FFFFFF;
 	background-image: url("imagens/bg3.jpg");
 	background-size: 100%;
 	min-height: 500px;
@@ -99,7 +101,7 @@ h1{
 #formação{
 	background-color: white;
 	min-height: 200px;
-	width: 50%;
+	width: 75%;
 	margin: auto;
 	padding: 50px;
 }
