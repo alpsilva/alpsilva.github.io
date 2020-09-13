@@ -115,6 +115,17 @@ h1{
 	text-align: left;
 }
 
+#PLpretext{
+	color: #FFFFFF;
+}
+#preTextHelp{
+	color: #FFFFFF;
+}
+
+#PLpostext{
+	color: #FFFFFF;
+}
+
 footer{
 	clear: both;
 	background-color: rgb(36, 82, 122);

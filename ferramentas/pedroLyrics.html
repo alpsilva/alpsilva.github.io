@@ -15,7 +15,7 @@
 	<header>
 		<nav class="navbar static-top navbar-expand-lg navbar-dark bg-primary">
 			<a class="navbar-brand" href="#">
-				<img src="../imagens/logo.png">
+				<img src="/imagens/logo.png">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +24,7 @@
 
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="/index.html">Home<span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarFerramentas" role="button"
@@ -54,10 +54,10 @@
 			<div class="row">
 				<div class="col">
 					<form>
-						<div class="form-group">
+						<div class="form-group" id="PLpretext">
 							<label for="preText">Música:</label>
 							<textarea class="form-control rounded 0" id="preText" rows="10"></textarea>
-							<small id="preTextHelp" class="form-text text-muted">A música inserida será
+							<small id="preTextHelp" class="form-text">A música inserida será
 								pedrocessada.</small>
 						</div>
 						<div class="text-center">
@@ -67,7 +67,7 @@
 					</form>
 				</div>
 				<div class="col">
-					<div class="form-group">
+					<div class="form-group" id="PLpostext">
 						<label for="posText">Música melhorada:</label>
 						<textarea class="form-control rounded 0" id="posText" rows="10"></textarea>
 					</div>
