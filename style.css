@@ -7,7 +7,7 @@ p{
 }
 
 body{
-
+	padding-top: 56px;
 }
 
 *{
@@ -15,14 +15,7 @@ body{
 	padding: 0;
 }
 
-header{
-	background-color: rgba(36, 82, 122, 0.6);
-	min-height: 70px;
-	top: 0px;
-	padding: 10px;
-	position: fixed;
-	width: 100%;
-}
+
 
 #logo{
 	float: left;
