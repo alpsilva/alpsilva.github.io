@@ -10,22 +10,25 @@ $(document).ready(function () {
         var array_linhas = musica.split(/\r?\n/); // separa musica em linhas (versos)
         var linhas = array_linhas.length;
         for (var i = 0; i < linhas; i++) {
-            var array_palavras = array_linhas[i].split(' ') //separa linhas em palavras
+            var array_palavras = array_linhas[i].split(' '); //separa linhas em palavras
             var palavras = array_palavras.length;
-            var aux = Math.floor(Math.random() * palavras) //seleciona uma palavra aleatoria p/ substituir
-            if (aux == 1) {
-                aux++ //Para garantir que a primeira posição do array (vazia) nunca seja escolhida
-            }
-            var n_linha = ""; //nova linha
-            if ( array_palavras[aux].length < 4){
-                if(aux == palavras-1){
-                    aux--;
-                } else{
-                    aux++;
+            if (palavras > 1) {
+                var aux = Math.floor(Math.random() * palavras);//seleciona uma palavra aleatoria p/ substituir
+                if (aux == 0) {
+                    aux++ //Para garantir que a primeira posição do array (vazia) nunca seja escolhida
                 }
+                var n_linha = ""; //nova linha
+                for (var j = 0; j < palavras; j++) {
+                    if (j == aux - 1) {
+                        array_palavras[j] = "PEDRO" //substitui a palavra por PEDRO
+                    }
+                    n_linha = n_linha.concat(" ", array_palavras[j]);
+
+                }
+                n_musica = n_musica.concat(n_linha, "\n");
+            } else {
+                n_musica = n_musica.concat(" PEDRO", "\n")
             }
-            array_palavras[aux] = "PEDRO" //substitui a palavra por PEDRO
-            n_musica = n_musica.concat(n_linha, "\n");
         }
         $('#posText').val(n_musica);
 
