@@ -1,11 +1,17 @@
 $(document).ready(function () {
     $('#botao').click(function (e) {
         e.preventDefault();
-        pedroLyrics();
+        var musica = $('#preText').val();
+        pedroLyrics(musica);
     });
 
-    function pedroLyrics() {
-        var musica = $('#preText').val();
+    $('#botaoFetch').click(function (e) {
+        e.preventDefault();
+        pedroLyricsFetch();
+    });
+
+    function pedroLyrics(musica) {   
+        console.log(musica);  
         var n_musica = ""; //musica processada
         var array_linhas = musica.split(/\r?\n/); // separa musica em linhas (versos)
         var linhas = array_linhas.length;
@@ -13,7 +19,7 @@ $(document).ready(function () {
             var array_palavras = array_linhas[i].split(' '); //separa linhas em palavras
             var palavras = array_palavras.length;
             if (palavras > 1) {
-                var aux = Math.floor(Math.random() * palavras);//seleciona uma palavra aleatoria p/ substituir
+                var aux = Math.floor(Math.random() * palavras); //seleciona uma palavra aleatoria p/ substituir
                 if (aux == 0) {
                     aux++ //Para garantir que a primeira posição do array (vazia) nunca seja escolhida
                 }
@@ -32,5 +38,21 @@ $(document).ready(function () {
         }
         $('#posText').val(n_musica);
 
+    }
+
+    function pedroLyricsFetch() {
+        var musica = "";
+        var autor = $('#autor').val();
+        var nome = $('#nome').val();
+        var url = 'https://api.lyrics.ovh/v1/' + autor + '/' + nome;  
+        $.get(url)
+        .done(function(response){
+            console.log(response);
+            musica = response.lyrics;
+            pedroLyrics(musica);
+        })
+        .fail(function(){
+            console.log("Erro na API de lyrics");
+        });
     }
 })

@@ -51,12 +51,7 @@ p{
 #menuPrincipal{
 	clear: both;
 	color: #FFFFFF;
-	background-image: url("imagens/bg5.jpg");
-	background-size: 100%;
-	min-height: 1000px;
-}
-
-.containerPrincipal{
+	min-height: 800px;
 	margin: auto;
 	width: 75%;
 	border: 3px, solid, rgb(36, 82, 122);
@@ -92,10 +87,10 @@ h1{
 
 #quemSou{
 	color: #FFFFFF;
-	background-image: url("imagens/bg3.jpg");
-	background-size: 100%;
 	min-height: 500px;
 	padding: 100px;
+	width: 75%;
+	margin:0 auto;
 }
 
 #formação{
@@ -137,8 +132,7 @@ footer{
 }
 
 .container{
-	width: 100%;
-	margin:0 auto;
+
 }
 
 .efeito{
