@@ -32,8 +32,7 @@
 						Ferramentas
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarFerramentas">
-						<a class="dropdown-item"
-							href="/ferramentas/pedroLyrics.html">PedroLyrics</a>
+						<a class="dropdown-item" href="/ferramentas/pedroLyrics.html">PedroLyrics</a>
 					</div>
 				</li>
 				<li class="nav-item">
@@ -49,47 +48,51 @@
 		</nav>
 	</header>
 
-	<div id="menuPrincipal">
+	<div class="view"
+		style="background-image: url('../imagens/bg5.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
 		<div class="efeito">
-			<div class="row">
-				<div class="col">
-					<form>
-						<div class="form-group" id="PLpretext">
-							<label for="preText">Música:</label>
-							<textarea class="form-control rounded 0" id="preText" rows="10"></textarea>
-							<small id="preTextHelp" class="form-text">A música inserida será
-								pedrocessada.</small>
-						</div>
-						<div class="text-center">
-							<button type="submit" class="btn btn-primary text-center" id="botao">Submit</button>
-						</div>
+			<div class="container" id = "PLTextHelp">
+				<div class="row">
+					<div class="col">
+						<form>
+							<div class="form-group">
+								<label for="preText">Música:</label>
+								<textarea class="form-control rounded 0" id="preText" rows="10"></textarea>
+								<small id="PLTextHelp" class="form-text">A música inserida será
+									pedrocessada.</small>
+							</div>
+							<div class="text-center">
+								<button type="submit" class="btn btn-primary text-center" id="botao">Submit</button>
+							</div>
 
-					</form>
+						</form>
 
-					<form>
-						<div class="form-group" id="Fetchpretext">
-							<label for="preText">Ou procure por autor/banda e nome:</label>
-							<textarea class="form-control rounded 0" id="autor"></textarea>
-							<textarea class="form-control rounded 0" id="nome"></textarea>
-							<small id="FetchpretextHelp" class="form-text">A música será pesquisada.</small>
-						</div>
-						<div class="text-center">
-							<button type="submit" class="btn btn-primary text-center" id="botaoFetch">Pesquisar</button>
-						</div>
+						<form>
+							<div class="form-group">
+								<label for="preText">Ou pesquise pela música:</label>
+								<textarea class="form-control rounded 0" id="autor" placeholder="Banda ou autor da música..."></textarea>
+								<br>
+								<textarea class="form-control rounded 0" id="nome" placeholder="Nome da música..."></textarea>
+								<small id="FetchpretextHelp" class="form-text">A música será pesquisada utilizando a banda/autor e o nome da música.</small>
+							</div>
+							<div class="text-center">
+								<button type="submit" class="btn btn-primary text-center"
+									id="botaoFetch">Pesquisar</button>
+							</div>
 
-					</form>
-				</div>
-				<div class="col">
-					<div class="form-group" id="PLpostext">
-						<label for="posText">Música melhorada:</label>
-						<textarea class="form-control rounded 0" id="posText" rows="10"></textarea>
+						</form>
+					</div>
+					<div class="col">
+						<div class="form-group" id="PLpostext">
+							<label for="posText">Música melhorada:</label>
+							<textarea class="form-control rounded 0" id="posText" rows="20"></textarea>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 	</div>
-
-
 
 	<footer>
 		<p>Email: alpsilva98@hotmail.com</p>
@@ -100,8 +103,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="../Pedro_Lyrics.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-		crossorigin="anonymous"></script>
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	</script>
 
 </body>
 
