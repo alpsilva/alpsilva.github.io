@@ -33,7 +33,7 @@ $(document).ready(function () {
                 }
                 n_musica = n_musica.concat(n_linha, "\n");
             } else {
-                n_musica = n_musica.concat(" PEDRO", "\n")
+                n_musica = n_musica.concat(" ", "\n")
             }
         }
         $('#posText').val(n_musica);
